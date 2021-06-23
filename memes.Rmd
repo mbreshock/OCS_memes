@@ -1,0 +1,25 @@
+---
+title: "memes"
+author: "Michael Breshock"
+date: "6/22/2021"
+output: html_document
+---
+
+## Memes created for the OCS twitter page
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(memer)
+```
+
+**meme list:**
+```{r}
+meme_list()
+```
+```{r}
+patrick_github = meme_get("PutItPatrick") %>%
+  meme_text_top("WE SHOULD TAKE\nALL THIS CODE", size = 26) %>%
+  meme_text_bottom("AND PUSH TO GITHUB", size = 26)
+patrick_github
+```
+
