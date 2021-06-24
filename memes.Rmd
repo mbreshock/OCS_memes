@@ -16,10 +16,12 @@ library(memer)
 ```{r}
 meme_list()
 ```
+
+## Patrick Github
 ```{r}
-patrick_github = meme_get("PutItPatrick") %>%
+meme_get("PutItPatrick") %>%
   meme_text_top("WE SHOULD TAKE\nALL THIS CODE", size = 26) %>%
   meme_text_bottom("AND PUSH TO GITHUB", size = 26)
-patrick_github
+
 ```
 
